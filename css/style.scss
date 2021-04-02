@@ -1,0 +1,227 @@
+.container {
+    padding-bottom: 30px;
+}
+
+.logo {
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.sub-ttl {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#hidden {
+    display: none;
+}
+
+#form {
+    text-align: center;
+
+}
+
+#label{
+    font-size: 15px !important;
+}
+
+option{
+    font-size: 15px;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 90%;
+    font-size: 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 20px;
+}
+
+
+
+
+.ui-autocomplete { position: absolute; cursor: default;z-index:30 !important;}  
+.ui-front,ui-autocomplete { 
+    z-index: 9999 !important; 
+
+}
+
+.genre {
+
+    &__group {
+        
+        padding-bottom: 15px;
+        border-radius: 30px;
+        opacity: .7;
+    }
+
+    &__ttl {
+        margin-top: 15px;
+        padding: 5px 10px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 100%;
+        text-align: center;
+        border: 1px solid #000;
+        background: rgba(255, 255, 255, 0.993);
+        border-radius: 15px;
+        margin: 15px 10px;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 10px;
+        opacity: .8;
+        transition: .5s;
+        box-shadow: #000;
+
+        &:hover {
+            border-radius: 40px;
+        }
+
+    }
+
+
+    &__google {
+        &:hover{
+            background: #dae9ff;
+        }
+    }
+
+    &__yahoo {
+        &:hover{
+            background: #f0e3ff
+        }
+    }
+
+    &__bing {
+        &:hover{
+            background: rgb(174, 236, 207);
+        }
+    }
+
+
+    &__youtube {
+        &:hover{
+            background: #ffe3e3;
+        }
+    }
+
+    &__twitter {
+        &:hover{
+            background: rgb(210, 242, 255);
+        }
+    }
+
+    &__instagram {
+        &:hover{
+            background: rgb(255, 236, 219);
+        }
+    }
+
+    &__tiktok {
+        &:hover{
+            background: #dcffe6;
+        }
+    }
+
+    &__amazon {
+        &:hover{
+            background: rgb(199, 223, 245);
+        }
+    }
+
+    &__rakuten {
+        &:hover{
+            background: rgb(248, 205, 205);
+        }
+    }
+
+    &__merukari {
+        &:hover{
+            background: rgb(248, 205, 205);
+        }
+    }
+
+    &__txt {
+        display: inline-block;
+        vertical-align: 15%;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+
+    }
+
+    &__icon {
+        font-size: 20px;
+        vertical-align: baseline;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+    .logo {
+        width: 270px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    input[type="text"] {
+        height: 60px;
+        width: 700px;
+    }
+
+    .genre {
+
+        &__ttl {
+            font-size: 30px;
+            padding-top: 0px;
+        }
+
+        &__top {
+            padding-top: 20px;
+        }
+
+        
+        &__ul {
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+        
+    
+        &__item {
+            line-height: 60px;
+            height: 60px;
+            width: 400px;
+            display: inline-block;
+            margin-right:0 auto ;
+    
+        }
+
+        &__itemS {
+            width: 250px;
+        }
+
+        &__icon {
+            font-size: 30px;
+        }
+}
+
+}
